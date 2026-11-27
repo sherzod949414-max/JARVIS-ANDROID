@@ -1,5 +1,5 @@
 
-name: uses: android-actions/setup-android@v4
+name: Build JARVIS APK
 
 on:
   workflow_dispatch:
@@ -21,7 +21,7 @@ jobs:
           java-version: '17'
 
       - name: Install Android SDK
-        uses: android-actions/setup-android@v3
+        uses: android-actions/setup-android@v4
 
       - name: Install Android platform
         run: |
