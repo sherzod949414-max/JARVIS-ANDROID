@@ -161,7 +161,7 @@ class MainActivity : Activity(), TextToSpeech.OnInitListener {
     private fun askGemini(key: String, question: String): String {
         var connection: HttpURLConnection? = null
         return try {
-            val url = URL("https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent")
+            val url = URL("https://generativelanguage.googleapis.com/v1beta/models/gemini-3.8-flash:generateContent")
             connection = (url.openConnection() as HttpURLConnection).apply {
                 requestMethod = "POST"
                 connectTimeout = 20000
